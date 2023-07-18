@@ -1,0 +1,35 @@
+{
+    "parent": "buildersexpanse:item/template_hammer",
+    "textures": {
+        "particle": "buildersexpanse:item/diamond_hammer"
+    },
+
+    "gui_light": "front",
+    "loader": "forge:separate_transforms",
+    "base": {
+        "parent": "buildersexpanse:item/template_hammer",
+        "textures": {
+            "layer0": "buildersexpanse:item/diamond_hammer_model"
+        }
+    },
+    "perspectives": {
+        "ground": {
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "buildersexpanse:item/diamond_hammer"
+            }
+        },
+        "gui": {
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "buildersexpanse:item/diamond_hammer"
+            }
+        },
+        "fixed": {
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "buildersexpanse:item/diamond_hammer"
+            }
+        }
+    }
+}

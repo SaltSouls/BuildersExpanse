@@ -1,0 +1,35 @@
+{
+    "parent": "buildersexpanse:item/template_hammer",
+    "textures": {
+        "particle": "buildersexpanse:item/wooden_hammer"
+    },
+
+    "gui_light": "front",
+    "loader": "forge:separate_transforms",
+    "base": {
+        "parent": "buildersexpanse:item/template_hammer",
+        "textures": {
+            "layer0": "buildersexpanse:item/wooden_hammer_model"
+        }
+    },
+    "perspectives": {
+        "ground": {
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "buildersexpanse:item/wooden_hammer"
+            }
+        },
+        "gui": {
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "buildersexpanse:item/wooden_hammer"
+            }
+        },
+        "fixed": {
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "buildersexpanse:item/wooden_hammer"
+            }
+        }
+    }
+}
