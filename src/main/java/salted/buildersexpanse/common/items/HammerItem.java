@@ -55,10 +55,12 @@ public class HammerItem extends DiggerItem {
 
         if (isHammer(item) && canBulkMine(state, BETags.CAN_BULK_MINE)) {
             if(!player.isShiftKeyDown()) {
-                int mined = getAmountMined(player, pos, getRadius(3), getDepth(1));
+                int radius = getRadius(3);
+                int depth = getDepth(1);
+                int mined = getAmountMined(player, pos, radius, depth);
 
                 if (mined > 1) {
-                    Iterable<BlockPos> list = getBlocks(player, pos, getRadius(3), getDepth(1), getTargetedBlock(player));
+                    Iterable<BlockPos> list = getBlocks(player, pos, radius, depth, getTargetedBlock(player));
                     AtomicReference<Float> tempDestroySpeed = new AtomicReference<>(0F);
 
                     list.forEach(listPos -> {
