@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 import salted.buildersexpanse.common.registry.BEBlocks;
 import salted.buildersexpanse.common.registry.BEItems;
 
@@ -22,11 +23,9 @@ public class BuildersExpanse {
 
 
     public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab(BuildersExpanse.MODID) {
-        @Nonnull
+        @NotNull
         @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(BEItems.IRON_SAW.get());
-        }
+        public ItemStack makeIcon() { return new ItemStack(BEItems.IRON_SAW.get()); }
     };
 
     public BuildersExpanse() {

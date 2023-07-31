@@ -8,7 +8,7 @@ import salted.buildersexpanse.BuildersExpanse;
 
 public class BETags {
     public static final TagKey<Block> MINEABLE_WITH_HAMMER = modBlockTag("mineable/hammer");
-    public static final TagKey<Block> HAMMER_BULK_MINE = modBlockTag("hammer_bulk_mine");
+    public static final TagKey<Block> CAN_BULK_MINE = modBlockTag("can_bulk_mine");
     public static final TagKey<Block> MINEABLE_WITH_SAW = modBlockTag("mineable/saw");
 
     private static TagKey<Block> modBlockTag(String path) {
