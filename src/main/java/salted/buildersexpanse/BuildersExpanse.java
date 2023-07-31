@@ -13,8 +13,6 @@ import org.jetbrains.annotations.NotNull;
 import salted.buildersexpanse.common.registry.BEBlocks;
 import salted.buildersexpanse.common.registry.BEItems;
 
-import javax.annotation.Nonnull;
-
 @Mod(BuildersExpanse.MODID)
 public class BuildersExpanse {
     public static final String MODID = "buildersexpanse";
@@ -25,7 +23,9 @@ public class BuildersExpanse {
     public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab(BuildersExpanse.MODID) {
         @NotNull
         @Override
-        public ItemStack makeIcon() { return new ItemStack(BEItems.IRON_SAW.get()); }
+        public ItemStack makeIcon() {
+            return new ItemStack(BEItems.IRON_SAW.get());
+        }
     };
 
     public BuildersExpanse() {
@@ -41,6 +41,6 @@ public class BuildersExpanse {
         BEBlocks.BLOCKS.register(bus);
     }
 
-
 //    public static void commonSetup(final @Nonnull FMLCommonSetupEvent event) { }
+
 }

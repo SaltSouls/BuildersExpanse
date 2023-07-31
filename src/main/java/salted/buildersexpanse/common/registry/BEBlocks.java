@@ -13,13 +13,12 @@ import java.util.function.ToIntFunction;
 @Mod.EventBusSubscriber(modid = BuildersExpanse.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BEBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BuildersExpanse.MODID);
+
     private static ToIntFunction<BlockState> lightLevel(int lightValue) {
         return (state) -> state.getValue(BlockStateProperties.LIT) ? lightValue : 0;
     }
 
     // workstations
-
-
 
 
 }

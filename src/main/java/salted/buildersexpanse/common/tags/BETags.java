@@ -14,4 +14,5 @@ public class BETags {
     private static TagKey<Block> modBlockTag(String path) {
         return TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(BuildersExpanse.MODID, path));
     }
+
 }
